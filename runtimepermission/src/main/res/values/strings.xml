@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">运行时权限</string>
+    <string name="call">拨打电话</string>
+</resources>
