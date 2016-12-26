@@ -1,1 +1,1 @@
-include ':shipeiqimoshi', ':runtimepermission'
+include ':shipeiqimoshi', ':runtimepermission', ':baselibrary', ':notification'

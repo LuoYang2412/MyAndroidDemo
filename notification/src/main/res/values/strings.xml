@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Notification</string>
+    <string name="send_notification">发送通知(点击通知自动取消）</string>
+    <string name="from_notification">点击通知打开的页面</string>
+    <string name="send_notification1">发送通知</string>
+    <string name="cancel_notification">取消通知</string>
+    <string name="send_notification2">发送通知（系统默认）</string>
+    <string name="notification_bigText">长文本通知</string>
+    <string name="notification_bigPicture">显示大图通知</string>
+</resources>
