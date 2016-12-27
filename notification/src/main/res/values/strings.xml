@@ -7,4 +7,5 @@
     <string name="send_notification2">发送通知（系统默认）</string>
     <string name="notification_bigText">长文本通知</string>
     <string name="notification_bigPicture">显示大图通知</string>
+    <string name="notification_priority">通知的重要程度(Priority)</string>
 </resources>

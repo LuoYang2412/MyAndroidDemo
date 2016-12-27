@@ -50,7 +50,7 @@ public class MainActivity extends BaseActivity {
                 PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, 0);
                 notification = new NotificationCompat.Builder(this)
                         .setContentTitle("这是ContextTitle")
-                        .setContentText("这是ConTentText")
+                        .setContentText("setAutoCancel(true)")
                         .setWhen(System.currentTimeMillis())
                         .setSmallIcon(R.mipmap.ic_launcher)
                         .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher))
@@ -61,7 +61,7 @@ public class MainActivity extends BaseActivity {
             case R.id.button1:
                 notification = new NotificationCompat.Builder(this)
                         .setContentTitle("这是ContextTitle")
-                        .setContentText("这是ConTentText")
+                        .setContentText("setSound setVibrate setLights")
                         .setWhen(System.currentTimeMillis())
                         .setSmallIcon(R.mipmap.ic_launcher)
                         .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher))
@@ -76,7 +76,7 @@ public class MainActivity extends BaseActivity {
             case R.id.button3:
                 notification = new NotificationCompat.Builder(this)
                         .setContentTitle("这是ContextTitle")
-                        .setContentText("这是ConTentText")
+                        .setContentText("setDefaults")
                         .setWhen(System.currentTimeMillis())
                         .setSmallIcon(R.mipmap.ic_launcher)
                         .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher))
@@ -87,7 +87,7 @@ public class MainActivity extends BaseActivity {
             case R.id.button4:
                 notification = new NotificationCompat.Builder(this)
                         .setContentTitle("这是ContextTitle")
-                        .setContentText("这是ConTentText")
+                        .setContentText("BigTextStyle")
                         .setWhen(System.currentTimeMillis())
                         .setSmallIcon(R.mipmap.ic_launcher)
                         .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher))
@@ -101,12 +101,67 @@ public class MainActivity extends BaseActivity {
             case R.id.button5:
                 notification = new NotificationCompat.Builder(this)
                         .setContentTitle("这是ContextTitle")
-                        .setContentText("这是ConTentText")
+                        .setContentText("BigPictureStyle")
                         .setWhen(System.currentTimeMillis())
                         .setSmallIcon(R.mipmap.ic_launcher)
                         .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher))
                         .setDefaults(NotificationCompat.DEFAULT_ALL)
                         .setStyle(new NotificationCompat.BigPictureStyle().bigPicture(BitmapFactory.decodeResource(getResources(), R.mipmap.pic)))
+                        .build();
+                break;
+            case R.id.button6:
+                notification = new NotificationCompat.Builder(this)
+                        .setContentTitle("这是ContextTitle")
+                        .setContentText("PRIORITY_DEFAULT")
+                        .setWhen(System.currentTimeMillis())
+                        .setSmallIcon(R.mipmap.ic_launcher)
+                        .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher))
+                        .setDefaults(NotificationCompat.DEFAULT_ALL)
+                        .setPriority(NotificationCompat.PRIORITY_DEFAULT)
+                        .build();
+                break;
+            case R.id.button7:
+                notification = new NotificationCompat.Builder(this)
+                        .setContentTitle("这是ContextTitle")
+                        .setContentText("PRIORITY_MIN")
+                        .setWhen(System.currentTimeMillis())
+                        .setSmallIcon(R.mipmap.ic_launcher)
+                        .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher))
+                        .setDefaults(NotificationCompat.DEFAULT_ALL)
+                        .setPriority(NotificationCompat.PRIORITY_MIN)
+                        .build();
+                break;
+            case R.id.button8:
+                notification = new NotificationCompat.Builder(this)
+                        .setContentTitle("这是ContextTitle")
+                        .setContentText("PRIORITY_LOW")
+                        .setWhen(System.currentTimeMillis())
+                        .setSmallIcon(R.mipmap.ic_launcher)
+                        .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher))
+                        .setDefaults(NotificationCompat.DEFAULT_ALL)
+                        .setPriority(NotificationCompat.PRIORITY_LOW)
+                        .build();
+                break;
+            case R.id.button9:
+                notification = new NotificationCompat.Builder(this)
+                        .setContentTitle("这是ContextTitle")
+                        .setContentText("PRIORITY_HIGH")
+                        .setWhen(System.currentTimeMillis())
+                        .setSmallIcon(R.mipmap.ic_launcher)
+                        .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher))
+                        .setDefaults(NotificationCompat.DEFAULT_ALL)
+                        .setPriority(NotificationCompat.PRIORITY_HIGH)
+                        .build();
+                break;
+            case R.id.button10:
+                notification = new NotificationCompat.Builder(this)
+                        .setContentTitle("这是ContextTitle")
+                        .setContentText("PRIORITY_MAX")
+                        .setWhen(System.currentTimeMillis())
+                        .setSmallIcon(R.mipmap.ic_launcher)
+                        .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher))
+                        .setDefaults(NotificationCompat.DEFAULT_ALL)
+                        .setPriority(NotificationCompat.PRIORITY_MAX)
                         .build();
                 break;
         }
