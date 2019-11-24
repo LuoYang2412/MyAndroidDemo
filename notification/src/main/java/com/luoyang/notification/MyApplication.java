@@ -1,7 +1,7 @@
 package com.luoyang.notification;
 
 import android.app.Application;
-import android.support.v4.app.NotificationManagerCompat;
+import androidx.core.app.NotificationManagerCompat;
 
 import com.luoyang.baselibrary.utils.ActivityLifeManager;
 

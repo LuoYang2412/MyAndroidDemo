@@ -3,12 +3,13 @@ package com.luoyang.notification.activity;
 import android.app.Notification;
 import android.app.PendingIntent;
 import android.content.Intent;
-import android.databinding.DataBindingUtil;
+
+import androidx.core.app.NotificationCompat;
+import androidx.databinding.DataBindingUtil;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.net.Uri;
-import android.support.v4.app.NotificationManagerCompat;
-import android.support.v7.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 import android.util.Log;
 import android.view.View;
 
