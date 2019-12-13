@@ -1,1 +1,1 @@
-include ':shipeiqimoshi', ':runtimepermission', ':baselibrary', ':notification', ':shake'
+include ':shipeiqimoshi', ':runtimepermission', ':baselibrary', ':notification', ':shake',':txplayer'

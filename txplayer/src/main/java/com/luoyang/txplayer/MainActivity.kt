@@ -29,6 +29,10 @@ class MainActivity : AppCompatActivity() {
         val url = intent.getStringExtra("url")
                 ?: "http://video.v2gogo.com/upload/fromWeb/video/2019/11/18/6D245C2A1A96C561735CEC4F2036F3EC.mp4"
         txVodPlayer.startPlay(url)
+        floatingActionButton.setOnLongClickListener { v ->
+            SupperPlayerActivity.goIn(this)
+            return@setOnLongClickListener true
+        }
     }
 
     override fun onResume() {
